@@ -1,0 +1,23 @@
+_properties: {}
+attribution: https://github.com/OpenBounds/PublicLands
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -119.8004150390625
+  - 39.00637903337458
+  - 10
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers:
+  - lands
+maxzoom: 16
+minzoom: 5
+name: contour line test
+source: "http://data.openbounds.org/publiclands/tiles.json"
+styles: 
+  - style.mss
+template: ''
