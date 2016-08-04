@@ -16,8 +16,8 @@ layers:
   - lands
 maxzoom: 16
 minzoom: 5
-name: contour line test
-source: "http://data.openbounds.org/publiclands/tiles.json"
+name: OpenBounds US Public Lands
+source: "http://localhost:8080/index.json"
 styles: 
   - style.mss
 template: ''
