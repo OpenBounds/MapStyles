@@ -14,10 +14,11 @@ format: "png8:m=h"
 interactivity_layer: ''
 layers:
   - lands
+  - lands_label
 maxzoom: 16
 minzoom: 5
 name: OpenBounds US Public Lands
-source: "http://localhost:8080/index.json"
+source: "http://data.openbounds.org/publiclands/tiles.json"
 styles: 
   - style.mss
 template: ''
