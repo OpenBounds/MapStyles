@@ -127,7 +127,7 @@ Map { font-directory: url("./fonts"); }
     text-face-name: 'Noto Sans Regular';
     text-name:'[loc_nm]';
     text-size: 12;
-    text-placement:point;
+    text-placement:line;
     text-fill:black;
     text-min-padding:1;
     text-wrap-width:100;
