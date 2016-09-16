@@ -9,8 +9,10 @@ Map { font-directory: url("./fonts"); }
     text-min-padding:1;
    	text-wrap-width:100;
 	polygon-opacity:1;
-    line-width:1;
-    line-color:black;
+	[zoom >= 14] {
+    	line-width:1;
+    	line-color:black;
+	}
 	[adminLevel='state'] {
     	polygon-fill:#f781bf;
 	}
@@ -29,6 +31,9 @@ Map { font-directory: url("./fonts"); }
 	[adminAgency='Forest Service'][type!='wilderness area'] {
 		polygon-fill: #4daf4a;
 	}
+	[adminAgency='U.S. Forest Service'][type!='wilderness area'] {
+        polygon-fill: #4daf4a;
+    }
 	[adminAgency='National Park Service'][type!='wilderness area'] {
 		polygon-fill: #a65628;
 	}
