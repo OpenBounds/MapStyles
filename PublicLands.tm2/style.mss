@@ -12,7 +12,7 @@ Map { font-directory: url("./fonts"); }
     line-width:1;
     line-color:black;
 	[adminLevel='state'] {
-    	polygon-fill:#4daf4a;
+    	polygon-fill:#f781bf;
 	}
 	[adminLevel='county'] {
     	polygon-fill:#ffff33;
@@ -20,17 +20,17 @@ Map { font-directory: url("./fonts"); }
 	[adminLevel='local'] {
     	polygon-fill:#377eb8;
 	}
-	[adminAgency='Bureau of Land Management'] {
+	[adminAgency='Bureau of Land Management'][type!='wilderness area'] {
 		polygon-fill: #e41a1c;
 	}
-	[adminAgency='Bureau of Reclamation']{
+	[adminAgency='Bureau of Reclamation'][type!='wilderness area'] {
 		polygon-fill: #984ea3;
 	}
-	[adminAgency='Forest Service']{
-		polygon-fill: #a65628;
+	[adminAgency='Forest Service'][type!='wilderness area'] {
+		polygon-fill: #4daf4a;
 	}
-	[adminAgency='National Park Service']{
-		polygon-fill: #f781bf;
+	[adminAgency='National Park Service'][type!='wilderness area'] {
+		polygon-fill: #a65628;
 	}
 	[adminAgency='Department of Defense']{
 		polygon-fill: #ff7f00;
@@ -59,10 +59,7 @@ Map { font-directory: url("./fonts"); }
 	[adminAgency='Department of Agriculture']{
 		polygon-fill: #984ea3;
 	}
-	[adminAgency='Department of Transportation']{
-		polygon-fill: #984ea3;
-	}
-	[adminAgency='Fish & Wildlife Service']{
+	[adminAgency='Fish & Wildlife Service'][type!='wilderness area'] {
 		polygon-fill: #0489B1;
 	}
 	[adminAgency='National Aeronautics and Space Administration']{
@@ -77,7 +74,7 @@ Map { font-directory: url("./fonts"); }
 	[adminAgency='Bureau of Indian Affairs']{
 		polygon-fill: #984ea3;
 	}
-	[adminAgency='Department of the Interior']{
+	[adminAgency='Department of the Interior'][type!='wilderness area'] {
 		polygon-fill: #984ea3;
 	}
 	[adminAgency='National Center for Atmospheric Research']{
@@ -111,9 +108,6 @@ Map { font-directory: url("./fonts"); }
         polygon-fill: #984ea3;
     }
 	[adminAgency='Fire Administration'] {
-        polygon-fill: #984ea3;
-    }
-	[adminAgency='International Boundary & Water Commission'] {
         polygon-fill: #984ea3;
     }
 	[adminAgency='National Marine Fisheries Service'] {
