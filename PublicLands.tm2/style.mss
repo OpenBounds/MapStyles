@@ -17,109 +17,109 @@ Map { font-directory: url("./fonts"); }
 		polygon-fill: red;
 	}
 	[adminAgency='Bureau of Reclamation']{
-		polygon-fill: #0080FF;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Forest Service']{
 		polygon-fill: #238b45;
 	}
 	[adminAgency='National Park Service']{
-		polygon-fill: #01DF01;
+		polygon-fill: #FE2EC8;
 	}
 	[adminAgency='Department of Defense']{
 		polygon-fill: #67000d;
 	}
 	[adminAgency='Army Corps of Engineers'] {
-		polygon-fill: #a50f15;
+		polygon-fill: #67000d;
 	}
 	[adminAgency='Army'] {
-        polygon-fill: #5E610B;
+        polygon-fill: #67000d;
     }
 	[adminAgency='Air Force'] {
-        polygon-fill: #A9F5F2;
+        polygon-fill: #67000d;
     }
 	[adminAgency='Navy'] {
-        polygon-fill: #01DFD7;
+        polygon-fill: #67000d;
     }	
 	[adminAgency='Department of Energy']{
-		polygon-fill: #F5A9F2;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Department of Agriculture']{
-		polygon-fill: #FF8000;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Coast Guard']{
-		polygon-fill: #0000FF;
+		polygon-fill: #67000d;
 	}
 	[adminAgency='Department of Transportation']{
-		polygon-fill: #636363;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Fish & Wildlife Service']{
-		polygon-fill: #a1d99b;
+		polygon-fill: #0489B1;
 	}
 	[adminAgency='National Aeronautics and Space Administration']{
-		polygon-fill: #000;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='International Boundary & Water Commission']{
 		polygon-fill: #49006a;
 	}
 	[adminAgency='Tennessee Valley Authority']{
-		polygon-fill: #7a0177;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Bureau of Indian Affairs']{
-		polygon-fill: #e34a33;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Department of the Interior']{
-		polygon-fill: #02818a;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='National Center for Atmospheric Research']{
-		polygon-fill: #d0d1e6;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='National Institute of Standards and Technology']{
-		polygon-fill: #ef3b2c;
+		polygon-fill: #49006a;
 	}
 	[adminAgency='Department of Justice']{
-        polygon-fill: #FE2E64;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Department of Commerce']{
-        polygon-fill: #CEF6D8;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Department of Veterans Affairs']{
-        polygon-fill: #61380B;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Federal Aviation Administration']{
-        polygon-fill: #fff;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Bureau of Indian Affairs'] {
-        polygon-fill: #F6CECE;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Bonneville Power Administration'] {
-        polygon-fill: #F7BE81;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Federal Government'] {
         polygon-fill: #49006a;
     }
 	[adminAgency='Federal Highway Administration'] {
-        polygon-fill: #210B61;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Fire Administration'] {
-        polygon-fill: #21610B;
+        polygon-fill: #49006a;
     }
 	[adminAgency='International Boundary & Water Commission'] {
-        polygon-fill: #424242;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Marine Corps'] {
-        polygon-fill: #AEB404;
+        polygon-fill: #67000d;
     }
 	[adminAgency='National Marine Fisheries Service'] {
-        polygon-fill: #088A85;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Natural Resources Conservation Service'] {
-        polygon-fill: #3B170B;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Smithsonian'] {
-        polygon-fill: #DF01D7;
+        polygon-fill: #49006a;
     }
 	[adminAgency='Smithsonian Environmental Research Center'] {
-        polygon-fill: #DF01D7;
+        polygon-fill: #49006a;
     }
 }
 
