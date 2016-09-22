@@ -9,6 +9,7 @@ Map { font-directory: url("./fonts"); }
 	[zoom >= 14] {
   		text-face-name: 'Noto Sans Regular';
     	text-name:'[name]';
+		[name=''],[name=NULL] { text-name: '[adminLevel]'; }
     	text-size: 12;
     	text-placement:interior;
     	text-fill:black;
