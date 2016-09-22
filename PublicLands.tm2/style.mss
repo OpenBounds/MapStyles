@@ -8,7 +8,7 @@ Map { font-directory: url("./fonts"); }
 	polygon-opacity:1;	
 	[zoom >= 14] {
   		text-face-name: 'Noto Sans Regular';
-    	text-name:'[loc_nm]';
+    	text-name:'name';
     	text-size: 12;
     	text-placement:interior;
     	text-fill:black;
