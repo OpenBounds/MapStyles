@@ -29,7 +29,7 @@ Map { font-directory: url("./fonts"); }
         polygon-fill:#984ea3;
     }
     [adminLevel='state'] {
-        polygon-fill:#dda0dd;
+        polygon-fill:#eed3ee;
     }
     [adminLevel='county'] {
         polygon-fill:#ffff33;
