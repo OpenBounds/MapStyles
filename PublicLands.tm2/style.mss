@@ -29,13 +29,13 @@ Map { font-directory: url("./fonts"); }
         polygon-fill:#984ea3;
     }
     [adminLevel='state'] {
-        polygon-fill:#f781bf;
+        polygon-fill:#eed3ee;
     }
     [adminLevel='county'] {
         polygon-fill:#ffff33;
     }
     [adminLevel='local'] {
-        polygon-fill:#377eb8;
+        polygon-fill:#00ffff;
     }
     [adminAgency='Bureau of Land Management'] {
         polygon-fill: #e41a1c;
