@@ -1,0 +1,277 @@
+{
+  "version": 8,
+  "name": "GaiaTopo",
+  "metadata": {
+    "mapbox:autogaiaosm": true,
+    "mapbox:type": "template"
+  },
+  "center": [
+    -119.4835,
+    37.8042
+  ],
+  "zoom": 10,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "publiclands": {
+      "url": "http://127.0.0.1:8080/index.json",
+      "type": "vector"
+    }
+  },
+  "glyphs": "mapbox://fonts/trailbehind/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "land.fill.federal",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#984ea3"
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "adminLevel",
+          "federal"
+        ],
+        [
+          "!in",
+          "adminAgency",
+          "Department of Defense",
+          "Army Corps of Engineers",
+          "Army",
+          "Air Force",
+          "Navy",
+          "Marine Corps",
+          "Coast Guard"
+        ],
+        [
+          "!in",
+          "adminAgency",
+          "Bureau of Land Management",
+          "Forest Service",
+          "U.S. Forest Service",
+          "National Park Service"
+        ]
+      ]
+    },
+    {
+      "id": "land.fill.state",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#f781bf"
+      },
+      "filter": [
+        "==",
+        "adminLevel",
+        "state"
+      ]
+    },
+    {
+      "id": "land.fill.county",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#ffff33"
+      },
+      "filter": [
+        "==",
+        "adminLevel",
+        "county"
+      ]
+    },
+    {
+      "id": "land.fill.local",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#377eb8"
+      },
+      "filter": [
+        "==",
+        "adminLevel",
+        "local"
+      ]
+    },
+    {
+      "id": "land.fill.blm",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#e41a1c"
+      },
+      "filter": [
+        "==",
+        "adminAgency",
+        "Bureau of Land Management"
+      ]
+    },
+    {
+      "id": "land.fill.usfs",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#4daf4a"
+      },
+      "filter": [
+        "any",
+        [
+          "==",
+          "adminAgency",
+          "Forest Service"
+        ],
+        [
+          "==",
+          "adminAgency",
+          "U.S. Forest Service"
+        ]
+      ]
+    },
+    {
+      "id": "land.fill.nps",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#a65628"
+      },
+      "filter": [
+        "==",
+        "adminAgency",
+        "National Park Service"
+      ]
+    },
+    {
+      "id": "land.fill.military",
+      "type": "fill",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#0489B1"
+      },
+      "filter": [
+        "in",
+        "adminAgency",
+        "Department of Defense",
+        "Army Corps of Engineers",
+        "Army",
+        "Air Force",
+        "Navy",
+        "Marine Corps",
+        "Coast Guard"
+      ]
+    },
+    {
+      "id": "lands.lines",
+      "type": "line",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "minzoom": 12,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 1,
+        "line-color": "#000000"
+      }
+    },
+    {
+      "id": "lands.labels.name",
+      "type": "symbol",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "has",
+          "name"
+        ],
+        [
+          "!=",
+          "name",
+          ""
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-field": "{name}",
+        "symbol-placement": "line",
+        "text-max-width": 40,
+                "symbol-spacing": 400,
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-opacity": 1,
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    },
+    {
+      "id": "lands.labels.agency",
+      "type": "symbol",
+      "source": "publiclands",
+      "source-layer": "lands",
+      "minzoom": 12,
+      "filter": [
+        "any",
+        [
+          "!has",
+          "name"
+        ],
+        [
+          "==",
+          "name",
+          ""
+        ]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-field": "{adminAgency}",
+        "symbol-placement": "line",
+        "text-max-width": 40,
+        "symbol-spacing": 400,
+        "text-size": 12
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-opacity": 1,
+        "text-halo-width": 1,
+        "text-halo-color": "#ffffff"
+      }
+    }
+  ],
+  "id": "openbounds.publiclands"
+}
