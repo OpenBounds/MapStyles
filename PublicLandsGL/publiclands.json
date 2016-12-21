@@ -25,12 +25,6 @@
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#984ea3"
-      },
       "filter": [
         "all",
         [
@@ -57,87 +51,87 @@
           "U.S. Forest Service",
           "National Park Service"
         ]
-      ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#984ea3"
+      }
     },
     {
       "id": "land.fill.state",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#f781bf"
-      },
       "filter": [
         "==",
         "adminLevel",
         "state"
-      ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#eed3ee"
+      }
     },
     {
       "id": "land.fill.county",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
+      "filter": [
+        "==",
+        "adminLevel",
+        "county"
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": "#ffff33"
-      },
-      "filter": [
-        "==",
-        "adminLevel",
-        "county"
-      ]
+      }
     },
     {
       "id": "land.fill.local",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#377eb8"
-      },
       "filter": [
         "==",
         "adminLevel",
         "local"
-      ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#00ffff"
+      }
     },
     {
       "id": "land.fill.blm",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
+      "filter": [
+        "==",
+        "adminAgency",
+        "Bureau of Land Management"
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": "#e41a1c"
-      },
-      "filter": [
-        "==",
-        "adminAgency",
-        "Bureau of Land Management"
-      ]
+      }
     },
     {
       "id": "land.fill.usfs",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#4daf4a"
-      },
       "filter": [
         "any",
         [
@@ -150,36 +144,36 @@
           "adminAgency",
           "U.S. Forest Service"
         ]
-      ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#4daf4a"
+      }
     },
     {
       "id": "land.fill.nps",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
+      "filter": [
+        "==",
+        "adminAgency",
+        "National Park Service"
+      ],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": "#a65628"
-      },
-      "filter": [
-        "==",
-        "adminAgency",
-        "National Park Service"
-      ]
+      }
     },
     {
       "id": "land.fill.military",
       "type": "fill",
       "source": "publiclands",
       "source-layer": "lands",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#0489B1"
-      },
       "filter": [
         "in",
         "adminAgency",
@@ -190,7 +184,13 @@
         "Navy",
         "Marine Corps",
         "Coast Guard"
-      ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#0489B1"
+      }
     },
     {
       "id": "lands.lines",
@@ -229,7 +229,7 @@
         "text-field": "{name}",
         "symbol-placement": "line",
         "text-max-width": 40,
-                "symbol-spacing": 400,
+        "symbol-spacing": 400,
         "text-size": 12
       },
       "paint": {
