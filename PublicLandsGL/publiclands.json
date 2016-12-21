@@ -14,7 +14,7 @@
   "pitch": 0,
   "sources": {
     "publiclands": {
-      "url": "http://127.0.0.1:8080/index.json",
+      "url": "http://data.openbounds.org/publiclands/tiles.json",
       "type": "vector"
     }
   },
