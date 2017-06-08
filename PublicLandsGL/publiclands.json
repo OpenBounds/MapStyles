@@ -18,7 +18,7 @@
       "type": "vector"
     }
   },
-  "glyphs": "mapbox://fonts/trailbehind/{fontstack}/{range}.pbf",
+  "glyphs": "https://static.gaiagps.com/GaiaTopoGL/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "land.fill.federal",
